@@ -1,0 +1,50 @@
+<h1><strong>Tutorial</strong></h1>
+<p>The Milestones App is used to track milestone achievements for a specific cohort over several years based on the categories selected. This tutorial will explain further how to search a specific cohort.&nbsp;</p>
+<center><img src="screenshot.jpg" width="1000" /></center>
+<ol style="list-style-type: upper-alpha;">
+<li><strong><em>Years to Track:</em></strong><br /><span style="text-decoration: underline;"><em>Years to Track</em></span> is the amount of years to track a specific cohort. Depending on available data, some semesters might be omitted. A notification will be displayed to indicate this warning.</li>
+<li><strong><em>Academic Year &amp; Semester:</em></strong><br />Every cohort is defined as a group of new students entering in a specific year and term. The <span style="text-decoration: underline;"><em>Academic Year</em></span> selects the year the cohort entered and the <span style="text-decoration: underline;"><em>Semester</em></span> selects the term entered. Only primary terms are included.</li>
+<li><strong>Student Demographics:</strong>
+<ol style="list-style-type: upper-roman;">
+<li><em><span style="text-decoration: underline;">Ethnicity</span></em></li>
+<li><em><span style="text-decoration: underline;">Age Group</span></em></li>
+<li><em><span style="text-decoration: underline;">Gender</span></em></li>
+</ol>
+</li>
+<li><strong><em>Affiliated Groups</em></strong>:
+<ol style="list-style-type: upper-roman;">
+<ol style="list-style-type: upper-roman;">
+<li><span style="text-decoration: underline;"><em>BOGG</em></span>: Refers to students who use Board of Governors Fee Waiver, which waives enrollment fees.</li>
+<li><span style="text-decoration: underline;"><em>DSPS</em></span>: Refers to students who are part of the Diversabilities Support Program and Services, which provides educational support for students with disabilities in the achievement of their academic and vocational goals.</li>
+<li><span style="text-decoration: underline;"><em>EOPS</em></span>: Refers to students who are part of the Extended Opportunity Programs and Services, which serves students who are economically disadvantaged and have lacked access to educational opportunities.</li>
+</ol>
+</ol>
+<br />
+<p>Each group has three options:</p>
+<ol style="list-style-type: lower-roman;">
+<ol style="list-style-type: lower-roman;">
+<li>ALL : Refers to any student regardless of affiliated group status</li>
+<li>Yes : Refers to students who <strong>ARE</strong>&nbsp;affiliated with the selected group</li>
+<li>No : Refers to students who <strong>ARE NOT </strong>affiliated with the selected group (omits those who do)</li>
+</ol>
+</ol>
+</li>
+<li><strong>Placement:</strong>
+<ol style="list-style-type: upper-roman;">
+<ol style="list-style-type: upper-roman;">
+<li><span style="text-decoration: underline;"><em>English Placement</em></span></li>
+<li><span style="text-decoration: underline;"><em>Math Placement</em></span></li>
+</ol>
+</ol>
+<br />
+<ol style="list-style-type: upper-roman;">
+<ol style="list-style-type: upper-roman;">Placement is determined by the first English/Math course attempted.</ol>
+</ol>
+</li>
+<li><strong><em>Goals:</em></strong><br /> <span style="text-decoration: underline;"><em>Educational Goals</em></span> is used to disaggregate by a student's purpose for initial enrollment at ELAC. There are various options to choose from, however, it is important to distinguish between the following:
+<ol style="list-style-type: upper-roman;">
+<li><em>Transfer</em>: Refers to students who want to transfer to a 4-year university.</li>
+<li><em>UC/CSU Student: R</em>efers to students who are currently in a UC or a CSU and are taking courses at ELAC.</li>
+</ol>
+</li>
+</ol>

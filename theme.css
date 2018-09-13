@@ -1,0 +1,109 @@
+html *
+{
+  font-family: "Georgia", Times, "Times New Roman", serif;
+}
+
+.main-header .logo {
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+
+.skin-green .main-header .logo , .skin-green .main-header .logo:hover{
+    background-color: #3c9e9b;/*#b4da87*/
+}
+
+.skin-green .main-header .navbar {
+    background-color: #4EC5C1;/*#C9F299*/
+}
+ 
+.skin-green .main-header .navbar .sidebar-toggle:hover{
+  background-color:#9866a0;
+}
+
+/*.content-wrapper, .right-side {
+    background-color: #3a3333;
+}*/
+
+.box.box-solid.box-primary>.box-header {
+    color: #000;
+    background: #3c8dbc;
+    background-color: #E5E338;
+}
+.box.box-primary {
+    border-top-color: #E5E338;
+}
+
+.box {
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+}
+
+.box.box-solid.box-primary {
+    border: 1px solid #55636b;
+    background:#f9f9f9; /*#FDEAEC;*/
+}
+
+.small-box {height: 125px}
+
+
+
+.bg-orange {
+    background-color: #337ab7!important;
+}
+
+.sidebar-toggle {max-height: 50px;}
+
+.content-wrapper,.right-side {
+  background-color: #FFFFFF;
+}
+
+
+.skin-black .left-side, .skin-black .main-sidebar, .skin-black .wrapper {
+background-color: #FFFFFF;
+}
+
+
+
+/*
+.skin-black .main-header .navbar>.sidebar-toggle {
+    color: #fff;
+    border-right: 1px solid #fff;
+}
+*/
+.selectize-dropdown {line-height: 2vw; 
+font-family: "Georgia", Times, "Times New Roman", serif;
+
+}
+
+.selectize-input {line-height: 2vw;font-size:14px;
+
+}
+.box.box-success {
+    border-bottom-color: #E5E338 !important;
+    border-left-color: #E5E338 !important;
+    border-right-color: #E5E338 !important;
+    border-top-color: #E5E338 !important;
+    /* border: 10px; */
+    border: 1.5px solid;
+}
+.shiny-notification {
+   position:fixed;
+   top: calc(15%);;
+   
+}
+            
+.skin-black .main-header>.logo {
+    height: 59px;
+} 
+
+.info-box {
+  position: relative;
+  top: 65px !important;
+}
+
+.skin-black .sidebar a {
+    color: #012231;
+}
+
+/*#7AE7C7 baby blue*/

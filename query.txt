@@ -1,0 +1,32 @@
+select enrolled.Student_Id, Cohort, enrolled.Year_Semester, enrolled.Grade,sections2.Discipline, sections2.Course_Number, Levels_Below_Transfer,
+                 Units,UC_Transferable,CSU_Transferable, case when Award is null then 0 else 1 end as Received_Award, Education_Goal,
+                 DATEDIFF(day,Birthdate,terms.Term_Start_Date)/365 as Term_Age ,Ethnicity, Gender, student_profiles.BOGG, student_profiles.Pell_Grant, 
+                 student_profiles.EOPS,student_profiles.DSPS, Residency_Status              
+                 from cohorts
+                 right join(	select *
+                 from enrollments
+                 where College='E' and Drop_Date IS NULL and Grade!='E') as enrolled
+                 on enrolled.Student_Id= cohorts.Student_Id and enrolled.College=cohorts.Cohort_College
+                 left join sections2 on sections2.College=cohorts.Cohort_College and sections2.Year_Semester=enrolled.Year_Semester
+                 and sections2.Section_Number=enrolled.Section_Number
+                 left join courses on courses.Curriculum_Id=sections2.Curriculum_Id and courses.Curriculum_Version=sections2.Curriculum_Version
+                 left join terms on enrolled.College=terms.College and enrolled.Year_Semester=terms.Year_Semester
+                 left join students on students.Student_Id=cohorts.Student_Id
+                 LEFT join (
+                 
+                 select result.Student_Id, BOGG,DSPS,EOPS, Education_Goal,Pell_Grant, Residency_Status
+                 from (select cohorts.Student_ID,Max(DSPS) AS DSPS,max(EOPS) as EOPS,MAX(BOGG) as BOGG,MAX(Pell_Grant) as Pell_Grant, Residency_Status
+                 from cohorts 
+                 left join student_profiles on student_profiles.College=cohorts.Cohort_College and student_profiles.Student_Id=cohorts.Student_Id and  cohorts.Cohort=student_profiles.Year_Semester
+                 where cohorts.Cohort=20132 and cohorts.Cohort_College='E' 
+                 group by cohorts.Student_Id, Residency_Status) as result
+                 left join (select distinct Student_Id, Education_Goal
+                 from student_profiles
+                 where College='E' and Year_Semester=20132) as goals on goals.Student_Id=result.Student_Id
+                 ) as student_profiles on student_profiles.Student_Id=cohorts.Student_Id 
+                 full outer join (select Student_Id, count(distinct Student_Id) as Award
+                 from awards
+                 where College='E' and Year(Award_Date)>='2013' and Year(Award_Date)<='2016'
+                 group by Student_Id) as awards_ on awards_.Student_Id=cohorts.Student_Id
+                 where Cohort_College='E' and Cohort='20132' and enrolled.Year_Semester>='20132' 
+                 and enrolled.Year_Semester<='20161'
